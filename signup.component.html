@@ -1,0 +1,109 @@
+<div class="container signup-container justify-content-center">
+    <div class="row">
+
+        <div class="col-md-6 signup-form-1 d-flex justify-content-center">
+            <img src="assets/book1.jpg" alt="bg img" style="width:100%; ">
+
+        </div>
+        <div class="col-md-6 signup-form-2">
+            <h3>Register Here!!!</h3>
+            <form name="form" [formGroup]="form">
+                <!-- <div class="social-login">
+                    <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>
+                            Sign in with Facebook</span> </button>
+                    <button class="btn google-btn social-btn mt-1" type="button"><span><i
+                                class="fab fa-google-plus-g"></i>
+                            Sign in with Google+</span> </button>
+                </div> -->
+
+                <div class="form-group">
+                    <div><b>FirstName</b></div>
+
+                    <input formControlName="firstName" id="name" type="text" placeholder="Enter FirstName"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('firstName').touched && form.get('firstName').invalid}" required pattern="^[a-zA-Z_]+$">
+                    <div class="invalid-feedback">
+                        <div style="color: white;">First Name is required</div>
+                    </div>
+                    
+
+
+
+
+
+                    <br>
+                    <div><b>LastName</b></div>
+                    <input formControlName="name" id="name" type="text" placeholder="Enter LastName"
+                        class="form-control form-control-sm"
+                    [ngClass]="{'is-invalid':form.get('lastName').touched && form.get('lastName').invalid}">
+                    <div class="invalid-feedback">
+                        <div style="color: white;">Last Name is required</div>
+                    </div>
+                    <br>
+                    <div><b>Email</b></div>
+                    <input formControlName="email" id="email" type="email" placeholder="Enter Email"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('emailId').touched && form.get('emailId').invalid}" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+                        <div class="invalid-feedback">
+                            <div style="color: white;">Email Id is required</div>
+                            
+                        </div>
+                    <br>
+                    <div><b>Mobile Number</b></div>
+                    <input formControlName="mobile" id="mobile" type="text" placeholder="Enter Mobile Number"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('mobNumber').touched && form.get('mobNumber').invalid}" minlength=3 maxlength=10>
+                        <div class="invalid-feedback">
+                            <div style="color: white;">Mobile Number is required</div>
+                        </div>
+
+                    <br>
+                    <div><b>Username</b></div>
+                    <input formControlName="username" id="username" type="text" placeholder="Enter Username"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('userName').touched && form.get('userName').invalid}">
+                        <div class="invalid-feedback">
+                            <div style="color: white;">User Name is required</div>
+                        </div>
+                    <br>
+                    <div><b>Password</b></div>
+                    <input formControlName="password" id="password" type="password" placeholder="Enter Password"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('password').touched && form.get('password').invalid}">
+                        <div class="invalid-feedback">
+                            <div style="color: white;">Password is required</div>
+                        </div>
+                    <br>
+                    <div><b>Confirm Password</b></div>
+                    <input formControlName="confpassword" id="conpassword" type="password"
+                        placeholder="Enter Confirm Password" class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('cnfPassword').touched && form.get('cnfPassword').invalid}">
+                        <div class="invalid-feedback">
+                            <div style="color: white;">Confirm Password is required</div>
+                        </div>
+                    <br>
+
+                    <div class="row form-group">
+
+                        <div class="col-6">
+                            <a href="signin">Already registered user</a>
+                        </div>
+                    </div>
+
+                    <div class=" row form-group">
+                        <div class="form-group">
+                            <button class="btn btn-outline-warning text-light" type="submit"><a style="color: white;"
+                                    href="signin">REGISTER</a></button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-outline-warning text-light" type="submit"><a style="color: white;"
+                                    href="signup">RESET</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

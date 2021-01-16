@@ -1,0 +1,64 @@
+<div class="container login-container justify-content-center">
+    <div class="row">
+        <div class="col-md-6 login-form-1 d-flex justify-content-center">
+            <img src="assets/book1.jpg" alt="bg img" style="width:100%; ">
+
+        </div>
+        <div class="col-md-6 login-form-2">
+            <h3>Login Here!!!</h3>
+            <form name="form" [formGroup]="form">
+                <!-- <div class="social-login">
+                    <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>
+                            Sign in with Facebook</span> </button>
+                    <button class="btn google-btn social-btn mt-1" type="button"><span><i
+                                class="fab fa-google-plus-g"></i>
+                            Sign in with Google+</span> </button>
+                </div> -->
+
+                <div class="form-group">
+                    <div><b>Email</b></div>
+                    <input formControlName="emailAddress" id="emailAddress" type="emailAddress" placeholder="Enter Email Address"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('emailAddress').touched && form.get('emailAddress').invalid}" required
+                        pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+                    <div class="invalid-feedback">
+                        <div style="color: white;">Email Address is required</div>
+
+                    </div>
+                    <br>
+                    <div><b>Password</b></div>
+                    <input formControlName="password" id="password" type="password" placeholder="Enter Password"
+                        class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid':form.get('password').touched && form.get('password').invalid}">
+                    <div class="invalid-feedback">
+                        <div style="color: white;">Password is required</div>
+                    </div>
+
+
+                    <div class="row form-group">
+                        <div class="login-form-3">
+                            <a href="signup">New User</a>
+                        </div>
+                        <div class="col-5">
+                            <a href="forgot">Forgot Password</a>
+                        </div>
+                    </div>
+
+                    <div class=" row form-group">
+                        <div class="form-group">
+                            <button class="btn btn-outline-warning text-light" type="submit"><a style="color: white;"
+                                    href="homepage">LOGIN</a></button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-outline-warning text-light" type="submit"><a style="color: white;"
+                                    href="signin">RESET</a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+1 index-                                                 home , contactus , about, login ,sighup //rupali
+ 2.login      home , contactus , about, login ,sighup //nidhi
+3. signup   home , contactus , about, login ,sighup //nidhi
+
+
+
+6.userhome                     home ,upload book ,donation, add creativity, artistic block, cart ,myprofile. //dinesh sir
+
+7.admin home                   user list ,book list,user feedback ,logout   //shweta
+
+8.upload book    // shweta
+9.myprofile     //rupali
+10.donation    //sandhya
+11.add creativity   //sandhya
+///////////////////////////////////////////////////////////////////////12.artistic block    
+13.cart    //sandhya
+
+forgot password //nidhi
+ error page // nidhi
+after add to cart // rupali

@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class CartService {
 
-	@Id
-	private int cartId;
 	
 	
 	

@@ -78,7 +78,6 @@ public class BookController {
 		return "success";
 	}
 	
-	
 	@GetMapping(value = "getBook/{title}")
 	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Book> getBookByTitle(@PathVariable String title) {
@@ -106,6 +105,13 @@ public class BookController {
 	}
 	
 	
-	
+	@GetMapping("/books/{bookId}")
+	@CrossOrigin(origins = "http://localhost:4200")
+
+	public ResponseEntity<Book> getBookById(@PathVariable int  bookId) {
+		Book book = bookrepository.findById(bookId)
+				.orElseThrow();
+		return ResponseEntity.ok(book);
+	}
 	
 }

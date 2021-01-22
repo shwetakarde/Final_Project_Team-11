@@ -10,7 +10,7 @@ import com.Sharecare.model.Book;
 
 public interface BookRepository extends JpaRepository<Book, Integer>{
 
-//	@Query(value="select *from book b where b.bookTitle like %:keyword%",nativeQuery = true)
+	//@Query(value="select b from book b where b.bookTitle like %keyword%*",nativeQuery = true)
 //	List<Book> findByBookTitle(@Param("keyword") String title);
 
 	//jpal

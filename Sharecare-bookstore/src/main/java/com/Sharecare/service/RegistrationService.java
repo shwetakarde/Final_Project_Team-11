@@ -1,5 +1,7 @@
 package com.Sharecare.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,10 @@ public class RegistrationService {
 	public User fetchUserByEmailIdAndPassword(String email,String password) {
 		
 		 return repo.findByemailAndPassword(email,password);
+	}
+
+	public User get(int id) {
+		return repo.findById(id);
 	}
 	
 }

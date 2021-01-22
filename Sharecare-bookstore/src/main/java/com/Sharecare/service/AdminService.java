@@ -27,7 +27,7 @@ public class AdminService {
 	 }
 
 	public List<User> getAllUser(){
-		return regrepo.findAll();
+		return (List<User>) regrepo.findAll();
 
 	}
 
